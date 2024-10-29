@@ -82,20 +82,20 @@ public class Main {
 
         //Op Matematicas
 
-        double x = 3.0;
-        double y = 4.0;
+        double x2 = 3.0;
+        double y2 = 4.0;
         double z = -5.0;
         double A, B, C;
         //Raiz quadrada de um número Math.sqrt();
-        A = Math.sqrt(x);
-        B = Math.sqrt(y);
+        A = Math.sqrt(x2);
+        B = Math.sqrt(y2);
         C = Math.sqrt(25.0);
-        System.out.println("Raiz quadrada de " + x + " = " + A);
-        System.out.println("Raiz quadrada de " + y + " = " + B);
+        System.out.println("Raiz quadrada de " + x2 + " = " + A);
+        System.out.println("Raiz quadrada de " + y2 + " = " + B);
         System.out.println("Raiz quadrada de 25 = " + C);
         //Valor elevado de um número Math.pow();
-        A = Math.pow(x, y);
-        B = Math.pow(x, 2.0);
+        A = Math.pow(x2, y);
+        B = Math.pow(x2, 2.0);
         C = Math.pow(5.0, 2.0);
         System.out.println(x + " elevado a " + y + " = " + A);
         System.out.println(x + " elevado ao quadrado = " + B);
