@@ -79,8 +79,5 @@ public class Main {
         j = sc.next().charAt(0);//Para ler o primeiro caracter de uma String.
         System.out.println("Você digitou: " + j);
         sc.close();
-
-
-
     }
 }
