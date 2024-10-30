@@ -105,6 +105,14 @@ public class Main {
         B = Math.abs(z);
         System.out.println("Valor absoluto de " + y + " = " + A);
         System.out.println("Valor absoluto de " + z + " = " + B);
-
+        //ESTRUTURAS CONDICIONAIS
+        int num, num2;
+        num = 5;
+        num2 = 10;
+        if (num > num2){
+            System.out.println("False");
+        }else {
+            System.out.println("True");
+        }
     }
 }
