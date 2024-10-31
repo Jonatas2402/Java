@@ -60,7 +60,7 @@ public class Main {
         System.out.printf("US decimal point: %.3f %n", measure);
 
         //entrada de dados
-        Scanner sc = new Scanner(System.in);//Decalrando a variável Scanner e associando ela ao teclado no console.
+        Scanner sc = new Scanner(System.in);//Declarando a variável Scanner e associando ela ao teclado no console.
         String x ;
         System.out.println("Digite alguma coisa: ");
         x = sc.next();
@@ -105,14 +105,7 @@ public class Main {
         B = Math.abs(z);
         System.out.println("Valor absoluto de " + y + " = " + A);
         System.out.println("Valor absoluto de " + z + " = " + B);
-        //ESTRUTURAS CONDICIONAIS
-        int num, num2;
-        num = 5;
-        num2 = 10;
-        if (num > num2){
-            System.out.println("False");
-        }else {
-            System.out.println("True");
-        }
+
+
     }
 }
