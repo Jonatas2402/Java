@@ -38,10 +38,20 @@ public class Repeticao {
             login = sc.nextInt();
         }
         System.out.println("Senha Correta!");
-        sc.close();
+
 
         //estrutura For (Para)
-
-
+        int n = sc.nextInt();//atribui a quantidade de repetições da nossa aplicação.
+        int adicao = 0;//Vai receber o valor de cada repetição e somar todos.
+        for (int j = 0; j < n; j++){ //(inicio ; condição ; incremento;)
+           int atr = sc.nextInt();//Valor para ser somado à adição.
+           adicao = adicao + atr; //Recebe o valor e soma com o último atribuido a ele.
+        }
+        System.out.println(adicao);//Mostra o resultado da soma.
+        sc.close();
+        // exercico de contagem com for
+        for (int k = 2 ; k < 20; k = k + 2){
+            System.out.println("O valores multiplos de 2:" + k);
+        }
     }
 }
