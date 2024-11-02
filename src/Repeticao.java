@@ -61,7 +61,6 @@ public class Repeticao {
            adicao = adicao + atr; //Recebe o valor e soma com o último atribuido a ele.
         }
         System.out.println(adicao);//Mostra o resultado da soma.
-        sc.close();
         //Testes de mesa
         int ano = 3;
         int ano2 = 0;
@@ -78,7 +77,17 @@ public class Repeticao {
             y2 = y2 + cont2;
         }
         //do while
-        /*Sintaxe*/
-
+        //Nesse método o código sera executado pelo menos uma vez antes da sua condicional.
+        //conversor de temperatura
+        char resp;
+        do {
+            System.out.print("DIgite a temperatura em C: ");
+            double C = sc.nextDouble();
+            double F = 9.0 * C / 5.0 + 32;
+            System.out.printf("A temperatura em Fahrenheit é: %.1f%n", F);
+            System.out.print("Deseja repetir (S/N):");
+            resp = sc.next().charAt(0);
+        } while (resp != 'N');
+        sc.close();
     }
 }
