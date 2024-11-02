@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 public class Repeticao {
     public static void main(String[] args) {
@@ -22,13 +23,6 @@ public class Repeticao {
             System.out.println(x + "-"+ y );
         }
         //Exercicios
-        int a = 4, b = 0, i = 0;
-
-        while (i < a){
-            i = i + 1;
-            b = b + 1;
-            System.out.println(i + "-" + b);
-        }
         //Senha
         int senha = 2002, login;
         login = sc.nextInt();
@@ -38,7 +32,26 @@ public class Repeticao {
             login = sc.nextInt();
         }
         System.out.println("Senha Correta!");
+        //Posto de gasolina
+        int gasolina = 0;
+        int diesel = 0;
+        int alcool = 0;
 
+        int tipo = sc.nextInt();
+        while (tipo != 4){
+            if (tipo == 1){
+                alcool = alcool + 1;
+            }else if (tipo == 2){
+                gasolina = gasolina + 1;
+            }else if (tipo == diesel){
+                diesel = diesel + 1;
+            }
+            tipo = sc.nextInt();
+        }
+        System.out.println("MUITO OBRIGADO");
+        System.out.println("Gasolina " + gasolina);
+        System.out.println("alcool " + alcool);
+        System.out.println("diesel " + diesel);
 
         //estrutura For (Para)
         int n = sc.nextInt();//atribui a quantidade de repetições da nossa aplicação.
@@ -49,9 +62,23 @@ public class Repeticao {
         }
         System.out.println(adicao);//Mostra o resultado da soma.
         sc.close();
-        // exercico de contagem com for
-        for (int k = 2 ; k < 20; k = k + 2){
-            System.out.println("O valores multiplos de 2:" + k);
+        //Testes de mesa
+        int ano = 3;
+        int ano2 = 0;
+        for (int cont = 0; cont < ano; cont++){
+            System.out.print(cont + ",");
+            ano2 = ano2 + 5;
+            System.out.println(ano2);
         }
+        //proximo
+        int x2 = 4;
+        int y2 = x2 + 2;
+        for (int cont2 = 0; cont2 < x; cont2++){
+            System.out.println(x2 + " " + y2);
+            y2 = y2 + cont2;
+        }
+        //do while
+        /*Sintaxe*/
+
     }
 }
