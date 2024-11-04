@@ -32,7 +32,7 @@ public class ProjetoBancario {
             if (opcao == 1){
                 System.out.println("seu saldo é R$: " + saldoInicio);
             } else if (opcao == 2){
-                System.out.print("digite o valor que deseja transferir R$: ");
+                System.out.println("digite o valor que deseja transferir R$: ");
                 double transf = leitura.nextDouble();
                 saldoInicio = saldoInicio - transf;
                 System.out.print("seu saldo ficou R$: " + saldoInicio);
@@ -41,6 +41,8 @@ public class ProjetoBancario {
                 double receb = leitura.nextDouble();
                 saldoInicio = saldoInicio + receb;
                 System.out.println("seu saldo ficou R$: " + saldoInicio);
+            }else {
+                System.out.println("Fim da operação!");
             }
         }
         leitura.close();
