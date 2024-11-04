@@ -34,8 +34,12 @@ public class ProjetoBancario {
             } else if (opcao == 2){
                 System.out.println("digite o valor que deseja transferir R$: ");
                 double transf = leitura.nextDouble();
-                saldoInicio = saldoInicio - transf;
-                System.out.print("seu saldo ficou R$: " + saldoInicio);
+                if (transf > saldoInicio){
+                    System.out.println("saldo Insuficiente para realizar a transferencia!");
+                }else {
+                    saldoInicio = saldoInicio - transf;
+                    System.out.println("seu saldo ficou R$: " + saldoInicio);
+                }
             } else if (opcao == 3){
                 System.out.println("Você recebeu uma transferência de R$: ");
                 double receb = leitura.nextDouble();
